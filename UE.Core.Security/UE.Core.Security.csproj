@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>UE Core Security</Title>
+    <Description>UE.Core.Security is a specialized extension of the UE.Core library, providing robust, reusable components for handling common security-related tasks in .NET applications. It streamlines the implementation of authentication, encryption, token management, and other security practices, helping developers build secure, maintainable, and scalable applications.</Description>
+    <Copyright>ushan.edirisinghe</Copyright>
+    <PackageProjectUrl>https://github.com/malindaushan999/UE.Core</PackageProjectUrl>
+    <PackageIcon>ue_core_logo_128.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/malindaushan999/UE.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>UE;UE.Core;UE.Core.Security</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\resources\ue_core_logo_128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

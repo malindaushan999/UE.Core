@@ -14,12 +14,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{53F399
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AA006B44-CF37-4760-B5A0-E8C0012A36A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE.Core.Attributes", "UE.Core.Attributes\UE.Core.Attributes.csproj", "{A02D3CFA-7675-41CC-BC59-44D2118D8607}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UE.Core.Attributes", "UE.Core.Attributes\UE.Core.Attributes.csproj", "{A02D3CFA-7675-41CC-BC59-44D2118D8607}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{44D83BE9-C820-45FF-85FC-4C0784139E6A}"
 	ProjectSection(SolutionItems) = preProject
 		resources\ue_core_logo_128.png = resources\ue_core_logo_128.png
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE.Core.Security", "UE.Core.Security\UE.Core.Security.csproj", "{3ED4B959-188F-4F3E-BF99-7E4EC7B85994}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
