@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<VersionPrefix>1.0.0</VersionPrefix>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>UE Core Attributes</Title>
     <Description>Custom attributes to enhance code readability and behavior, allowing developers to annotate their code with metadata that can be used for validation, serialization, and more.</Description>

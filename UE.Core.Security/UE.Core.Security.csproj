@@ -14,9 +14,17 @@
     <RepositoryUrl>https://github.com/malindaushan999/UE.Core</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>UE;UE.Core;UE.Core.Security</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	<VersionPrefix>1.0.1</VersionPrefix>
+    <Version>$(VersionPrefix)</Version>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\resources\ue_core_logo_128.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>

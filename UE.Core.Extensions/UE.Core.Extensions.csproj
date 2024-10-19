@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<VersionPrefix>1.0.0</VersionPrefix>
+    <Title>UE Core Extensions</Title>
+    <Description>UE.Core.Extensions is a modular library within the UE.Core ecosystem that offers a wide range of extension methods to enhance the functionality of existing .NET types. These methods allow developers to write cleaner, more expressive code by extending native .NET classes without modifying their source.</Description>
+    <Copyright>ushan.edirisinghe</Copyright>
+    <PackageProjectUrl>https://github.com/malindaushan999/UE.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/malindaushan999/UE.Core</RepositoryUrl>
+    <PackageIcon>ue_core_logo_128.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>UE;UE.Core;UE.Core.Extensions</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\resources\ue_core_logo_128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.67" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Scrutor" Version="5.0.1" />
+    <PackageReference Include="UE.Core.Attributes" Version="1.0.0" />
+    <PackageReference Include="UE.Core.Security" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+</Project>
