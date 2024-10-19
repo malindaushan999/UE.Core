@@ -4,6 +4,36 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>UE Core Attributes</Title>
+    <Description>Custom attributes to enhance code readability and behavior, allowing developers to annotate their code with metadata that can be used for validation, serialization, and more.</Description>
+    <Copyright>ushan.edirisinghe</Copyright>
+    <PackageProjectUrl>https://github.com/malindaushan999/UE.Core</PackageProjectUrl>
+    <PackageIcon>ue_core_logo_128.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/malindaushan999/UE.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>UE;UE.Core;UE.Core.Attributes</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\resources\ue_core_logo_128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
