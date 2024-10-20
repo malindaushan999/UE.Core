@@ -14,7 +14,7 @@ public class DbContextExtensionsTests : IDisposable
     public DbContextExtensionsTests()
     {
         _options = new DbContextOptionsBuilder<TestDbContext>()
-            .UseInMemoryDatabase(databaseName: "SMA.Shared.Extensions.TestDatabase")
+            .UseInMemoryDatabase(databaseName: "UE.Common.Extensions.TestDatabase")
             .Options;
 
         _context = new TestDbContext(_options);
@@ -35,9 +35,9 @@ public class DbContextExtensionsTests : IDisposable
         // Arrange
         var entities = new List<TestEntity>
         {
-            new TestEntity { Id = 1, Name = "Entity1" },
-            new TestEntity { Id = 2, Name = "Entity2" },
-            new TestEntity { Id = 3, Name = "Entity3" },
+            new() { Id = 1, Name = "Entity1" },
+            new() { Id = 2, Name = "Entity2" },
+            new() { Id = 3, Name = "Entity3" },
         };
         _context.AddRange(entities);
         _context.SaveChanges();
@@ -61,9 +61,9 @@ public class DbContextExtensionsTests : IDisposable
         // Arrange
         var entities = new List<TestEntity>
         {
-            new TestEntity { Id = 1, Name = "Entity1" },
-            new TestEntity { Id = 2, Name = "Entity2" },
-            new TestEntity { Id = 3, Name = "Entity3" },
+            new() { Id = 1, Name = "Entity1" },
+            new() { Id = 2, Name = "Entity2" },
+            new() { Id = 3, Name = "Entity3" },
         };
         _context.AddRange(entities);
         await _context.SaveChangesAsync();
@@ -87,9 +87,9 @@ public class DbContextExtensionsTests : IDisposable
         // Arrange
         var entities = new List<TestEntity>
         {
-            new TestEntity { Id = 1, Name = "Entity1" },
-            new TestEntity { Id = 2, Name = "Entity2" },
-            new TestEntity { Id = 3, Name = "Entity3" },
+            new() { Id = 1, Name = "Entity1" },
+            new() { Id = 2, Name = "Entity2" },
+            new() { Id = 3, Name = "Entity3" },
         };
         _context.AddRange(entities);
         await _context.SaveChangesAsync();
@@ -112,9 +112,9 @@ public class DbContextExtensionsTests : IDisposable
         // Arrange
         var entities = new List<TestEntity>
         {
-            new TestEntity { Id = 1, Name = "Entity1" },
-            new TestEntity { Id = 2, Name = "Entity2" },
-            new TestEntity { Id = 3, Name = "Entity3" },
+            new() { Id = 1, Name = "Entity1" },
+            new() { Id = 2, Name = "Entity2" },
+            new() { Id = 3, Name = "Entity3" },
         };
         _context.AddRange(entities);
         await _context.SaveChangesAsync();

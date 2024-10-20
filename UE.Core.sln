@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE.Core.Security.Tests", "U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE.Core.Extensions.Tests", "UE.Core.Extensions.Tests\UE.Core.Extensions.Tests.csproj", "{CDFE900C-9CAF-409D-96BE-B549E433938C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UE.Core.Common.Tests", "UE.Core.Common.Tests\UE.Core.Common.Tests.csproj", "{251EE345-F159-42DD-9B16-AD880F5BD8EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{CDFE900C-9CAF-409D-96BE-B549E433938C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDFE900C-9CAF-409D-96BE-B549E433938C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDFE900C-9CAF-409D-96BE-B549E433938C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251EE345-F159-42DD-9B16-AD880F5BD8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251EE345-F159-42DD-9B16-AD880F5BD8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251EE345-F159-42DD-9B16-AD880F5BD8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251EE345-F159-42DD-9B16-AD880F5BD8EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{3ED4B959-188F-4F3E-BF99-7E4EC7B85994} = {86AD5E2B-7894-4EB6-964B-6174B1192F58}
 		{4F480011-EDCA-4DE8-B6A1-617F295934FD} = {AA006B44-CF37-4760-B5A0-E8C0012A36A1}
 		{CDFE900C-9CAF-409D-96BE-B549E433938C} = {AA006B44-CF37-4760-B5A0-E8C0012A36A1}
+		{251EE345-F159-42DD-9B16-AD880F5BD8EF} = {AA006B44-CF37-4760-B5A0-E8C0012A36A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52F5A808-92FA-453F-B50E-6A68776CC12F}
