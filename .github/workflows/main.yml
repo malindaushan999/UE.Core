@@ -7,7 +7,7 @@
 
  jobs:
    publish:
-     runs-on: ubuntu-latest
+     runs-on: USHI-MSI
 
      steps:
        - name: Checkout code
