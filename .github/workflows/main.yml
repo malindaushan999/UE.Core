@@ -16,11 +16,22 @@
        - name: Restore dependencies
          run: dotnet restore
  
+       - name: Get current version
+         id: get_version
+         run: echo "##[set-output name=version;]$(dotnet msbuild /t:GetVersion /nologo | tail -n 1)"
+
+       - name: Increment version
+         id: increment_version
+         run: echo "##[set-output name=version;]$(echo ${{ steps.get_version.outputs.version }} | awk -F. -v OFS=. '{$NF++;print}')"
+ 
        - name: Build
-         run: dotnet build --configuration Release /p:Version=${{ github.run_number }}
+         run: dotnet build --configuration Release /p:Version=${{ steps.increment_version.outputs.version }}
  
        - name: Pack
-         run: dotnet pack --configuration Release --output ./nupkgs /p:Version=${{ github.run_number }}
+         run: dotnet pack --configuration Release --output ./nupkgs /p:Version=${{ steps.increment_version.outputs.version }}
+ 
+       - name: List contents of ./nupkgs
+         run: ls 
 
        - name: Publish to GitHub Packages
          run: dotnet nuget push ./nupkgs/*.nupkg -s https://nuget.pkg.github.com/malindaushan999/index.json -k ${{ secrets.NUGET_TOKEN }}
